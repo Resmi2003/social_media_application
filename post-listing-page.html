@@ -11,15 +11,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
 </head>
 
-<body class="h-screen bg-sky-800 flex justify-center items-center">
+<body class="h-screen sm:h-screen min-h-screen bg-sky-800 flex justify-center items-start sm:items-center pt-6 sm:pt-0">
 
-    <div class="h-[650px] w-[450px] border border-gray-400 bg-sky-100 rounded-[20px]">
+    <div class="h-[650px] w-[450px] border border-gray-400 bg-sky-100 rounded-[20px] w-[95%] max-w-[450px] h-auto sm:h-[650px] p-2 sm:p-0">
 
-        <div class="flex justify-evenly bg-sky-300/30 p-3 rounded-[10px]">
+        <!-- navbar -->
+        <div class="flex justify-evenly bg-sky-300/30 p-3 rounded-[10px] flex-wrap sm:flex-nowrap gap-2 text-center">
             <a href="./post-listing-page.html" class="font-semibold underline">Post Listing</a>
             <a href="./profile-detail-page.html">Profile</a>
             <a href="./index.html">Log out</a>
@@ -28,87 +27,91 @@
         <h1 class="text-2xl font-bold mt-6 text-slate-900/95 text-center">Social Media Post Listing</h1>
 
         <form action="">
-            <div class="h-[50px] w-[410px] bg-white ms-auto me-auto mt-3 rounded-[10px] flex justify-evenly p-2">
-                <input type="text" class="border border-gray-400 rounded-[5px] text-sm w-[300px] h-[35px] p-1.5"
-                    placeholder="What's on your mind?"></input>
-                <div class="text-white"><button type="submit" formaction="./post-listing-page.html"
-                        class="bg-indigo-600 rounded-[5px] w-[65px] h-[33px]">Post</button></div>
+
+            <!-- input box -->
+            <div class="h-[50px] w-[410px] bg-white ms-auto me-auto mt-3 rounded-[10px] flex items-center gap-2 p-2 w-full sm:w-[410px]">
+
+                <input type="text"
+                    class="border border-gray-400 rounded-[5px] text-sm w-[300px] h-[35px] p-1.5 w-full sm:w-[300px]"
+                    placeholder="What's on your mind?">
+
+                <button type="submit" formaction="./post-listing-page.html"
+                    class="bg-indigo-600 rounded-[5px] w-[65px] h-[33px] text-white shrink-0">
+                    Post
+                </button>
+
             </div>
 
-            <div class="w-[410px] h-[200px] bg-white ms-auto me-auto mt-6 rounded-[10px] p-2">
 
-                <div class="flex">
-                    <div class="m-2"><img class="w-[60px] h-[60px] rounded-[50%]" src="./images/angel k girl image.webp"
-                            alt=""></div>
+            <!-- POST 1 -->
+            <div class="w-[410px] h-[200px] bg-white ms-auto me-auto mt-6 rounded-[10px] p-2 w-full sm:w-[410px] h-auto sm:h-[200px]">
 
-                    <div class="ms-[10px] mt-[10px] w-[300px]">
+                <div class="flex flex-col sm:flex-row flex-row items-start">
+
+                    <div class="m-2 flex justify-center sm:justify-center justify-start">
+                        <img class="w-[60px] h-[60px] rounded-[50%]" src="./images/angel k girl image.webp" alt="">
+                    </div>
+
+                    <div class="ms-[10px] mt-[10px] w-[300px] w-full sm:w-[300px]">
 
                         <div class="flex justify-between">
-                            <div>
-                                <h4 class="font-bold">Angel K</h4>
-                            </div>
+                            <h4 class="font-bold">Angel K</h4>
 
-                            <div class="flex">
-                                <div class="text-sm">
-                                    <p class="text-gray-700">3 hours ago</p>
-                                </div>
-                                <div><i class="fa-solid fa-ellipsis-vertical"></i>
-                                </div>
+                            <div class="flex items-center gap-2 text-sm">
+                                <p class="text-gray-700">3 hours ago</p>
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
                             </div>
-
                         </div>
 
                         <p class="text-gray-500 text-base font-normal">Constantly seeking everyday magic!</p>
-                        <img class="w-[245px] h-[100px]" src="./images/new sunsettt.jpg" alt="">
 
-                        <div class="text-gray-600">
-                            <i class="fa-regular fa-heart"></i>1.2K <i class="fa-regular fa-comment ms-3"></i>304 <i
-                                class="fa-solid fa-share-nodes ms-3"></i>100
+                        <img class="w-[245px] h-[100px] w-full sm:w-[245px]" src="./images/new sunsettt.jpg" alt="">
+
+                        <div class="text-gray-600 mt-1">
+                            <i class="fa-regular fa-heart"></i>1.2K
+                            <i class="fa-regular fa-comment ms-3"></i>304
+                            <i class="fa-solid fa-share-nodes ms-3"></i>100
                         </div>
 
                     </div>
-
                 </div>
-
             </div>
 
 
 
-            <div class="w-[410px] h-[200px] bg-white ms-auto me-auto mt-6 rounded-[10px] p-2">
+            <!-- POST 2 -->
+            <div class="w-[410px] h-[200px] bg-white ms-auto me-auto mt-6 rounded-[10px] p-2 w-full sm:w-[410px] h-auto sm:h-[200px]">
 
-                <div class="flex">
-                    <div class="m-2"><img class="w-[60px] h-[60px] rounded-[50%]"
-                            src="./images/riya peter girl image.jpeg" alt=""></div>
+                <div class="flex flex-col sm:flex-row flex-row items-start">
 
-                    <div class="ms-[10px] mt-[10px] w-[300px]">
+                    <div class="m-2 flex justify-center sm:justify-center justify-start">
+                        <img class="w-[60px] h-[60px] rounded-[50%]"
+                            src="./images/riya peter girl image.jpeg" alt="">
+                    </div>
+
+                    <div class="ms-[10px] mt-[10px] w-[300px] w-full sm:w-[300px]">
 
                         <div class="flex justify-between">
-                            <div>
-                                <h4 class="font-bold">Kavya S</h4>
-                            </div>
+                            <h4 class="font-bold">Kavya S</h4>
 
-                            <div class="flex">
-                                <div class="text-sm">
-                                    <p class="text-gray-700">2 days ago</p>
-                                </div>
-                                <div><i class="fa-solid fa-ellipsis-vertical"></i>
-                                </div>
+                            <div class="flex items-center gap-2 text-sm">
+                                <p class="text-gray-700">2 days ago</p>
+                                <i class="fa-solid fa-ellipsis-vertical"></i>
                             </div>
-
                         </div>
 
                         <p class="text-gray-500 text-base font-normal">Lost in the leaves!</p>
-                        <img class="w-[245px] h-[100px]" src="./images/environment.jpeg" alt="">
 
-                        <div class="text-gray-600">
-                            <i class="fa-regular fa-heart"></i>9.2K <i class="fa-regular fa-comment ms-3"></i>100 <i
-                                class="fa-solid fa-share-nodes ms-3"></i>50
+                        <img class="w-[245px] h-[100px] w-full sm:w-[245px]" src="./images/environment.jpeg" alt="">
+
+                        <div class="text-gray-600 mt-1">
+                            <i class="fa-regular fa-heart"></i>9.2K
+                            <i class="fa-regular fa-comment ms-3"></i>100
+                            <i class="fa-solid fa-share-nodes ms-3"></i>50
                         </div>
 
                     </div>
-
                 </div>
-
             </div>
 
         </form>
