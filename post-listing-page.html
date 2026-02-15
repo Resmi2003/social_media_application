@@ -5,54 +5,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Social Media Post Listing</title>
+
     <!-- tw cdn -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
     <!-- fontawesome cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body class="h-screen sm:h-screen min-h-screen bg-sky-800 flex justify-center items-start sm:items-center pt-6 sm:pt-0">
+<body class="min-h-screen bg-sky-800 flex justify-center items-start sm:items-center py-6">
 
-    <div class="h-[650px] w-[450px] border border-gray-400 bg-sky-100 rounded-[20px] w-[95%] max-w-[450px] h-auto sm:h-[650px] p-2 sm:p-0">
+    <div class="border border-gray-400 bg-sky-100 rounded-[20px] w-[95%] max-w-[450px] p-4 space-y-4">
 
         <!-- navbar -->
-        <div class="flex justify-evenly bg-sky-300/30 p-3 rounded-[10px] flex-wrap sm:flex-nowrap gap-2 text-center">
+        <div class="flex justify-evenly bg-sky-300/30 p-3 rounded-[10px] text-center">
             <a href="./post-listing-page.html" class="font-semibold underline">Post Listing</a>
             <a href="./profile-detail-page.html">Profile</a>
             <a href="./index.html">Log out</a>
         </div>
 
-        <h1 class="text-2xl font-bold mt-6 text-slate-900/95 text-center">Social Media Post Listing</h1>
-
-        <form action="">
+        <form action="" class="space-y-4">
 
             <!-- input box -->
-            <div class="h-[50px] w-[410px] bg-white ms-auto me-auto mt-3 rounded-[10px] flex items-center gap-2 p-2 w-full sm:w-[410px]">
+            <div class="bg-white rounded-[10px] flex items-center gap-2 p-2">
 
                 <input type="text"
-                    class="border border-gray-400 rounded-[5px] text-sm w-[300px] h-[35px] p-1.5 w-full sm:w-[300px]"
+                    class="border border-gray-400 rounded-[5px] text-sm w-full h-[38px] p-2"
                     placeholder="What's on your mind?">
 
-                <button type="submit" formaction="./post-listing-page.html"
-                    class="bg-indigo-600 rounded-[5px] w-[65px] h-[33px] text-white shrink-0">
+                <button type="submit"
+                    class="bg-indigo-600 rounded-[5px] px-4 h-[38px] text-white">
                     Post
                 </button>
 
             </div>
 
-
             <!-- POST 1 -->
-            <div class="w-[410px] h-[200px] bg-white ms-auto me-auto mt-6 rounded-[10px] p-2 w-full sm:w-[410px] h-auto sm:h-[200px]">
+            <div class="bg-white rounded-[10px] p-3 space-y-2">
 
-                <div class="flex flex-col sm:flex-row flex-row items-start">
+                <div class="flex gap-3">
 
-                    <div class="m-2 flex justify-center sm:justify-center justify-start">
-                        <img class="w-[60px] h-[60px] rounded-[50%]" src="./images/angel k girl image.webp" alt="">
-                    </div>
+                    <img class="w-[60px] h-[60px] rounded-full"
+                        src="./images/angel k girl image.webp" alt="">
 
-                    <div class="ms-[10px] mt-[10px] w-[300px] w-full sm:w-[300px]">
+                    <div class="flex-1">
 
                         <div class="flex justify-between">
                             <h4 class="font-bold">Angel K</h4>
@@ -63,9 +61,10 @@
                             </div>
                         </div>
 
-                        <p class="text-gray-500 text-base font-normal">Constantly seeking everyday magic!</p>
+                        <p class="text-gray-500">Constantly seeking everyday magic!</p>
 
-                        <img class="w-[245px] h-[100px] w-full sm:w-[245px]" src="./images/new sunsettt.jpg" alt="">
+                        <img class="w-full h-[130px] object-cover rounded"
+                            src="./images/new sunsettt.jpg" alt="">
 
                         <div class="text-gray-600 mt-1">
                             <i class="fa-regular fa-heart"></i>1.2K
@@ -77,19 +76,15 @@
                 </div>
             </div>
 
-
-
             <!-- POST 2 -->
-            <div class="w-[410px] h-[200px] bg-white ms-auto me-auto mt-6 rounded-[10px] p-2 w-full sm:w-[410px] h-auto sm:h-[200px]">
+            <div class="bg-white rounded-[10px] p-3 space-y-2">
 
-                <div class="flex flex-col sm:flex-row flex-row items-start">
+                <div class="flex gap-3">
 
-                    <div class="m-2 flex justify-center sm:justify-center justify-start">
-                        <img class="w-[60px] h-[60px] rounded-[50%]"
-                            src="./images/riya peter girl image.jpeg" alt="">
-                    </div>
+                    <img class="w-[60px] h-[60px] rounded-full"
+                        src="./images/riya peter girl image.jpeg" alt="">
 
-                    <div class="ms-[10px] mt-[10px] w-[300px] w-full sm:w-[300px]">
+                    <div class="flex-1">
 
                         <div class="flex justify-between">
                             <h4 class="font-bold">Kavya S</h4>
@@ -100,9 +95,10 @@
                             </div>
                         </div>
 
-                        <p class="text-gray-500 text-base font-normal">Lost in the leaves!</p>
+                        <p class="text-gray-500">Lost in the leaves!</p>
 
-                        <img class="w-[245px] h-[100px] w-full sm:w-[245px]" src="./images/environment.jpeg" alt="">
+                        <img class="w-full h-[130px] object-cover rounded"
+                            src="./images/environment.jpeg" alt="">
 
                         <div class="text-gray-600 mt-1">
                             <i class="fa-regular fa-heart"></i>9.2K

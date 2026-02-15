@@ -5,80 +5,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Social Media Profile Detail</title>
+
     <!-- tw cdn -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
     <!-- fontawesome cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body class="h-screen sm:h-screen min-h-screen bg-sky-800 flex justify-center items-start sm:items-center pt-6 sm:pt-0">
+<body class="min-h-screen bg-sky-800 flex justify-center items-start sm:items-center py-6">
 
-    <div class="h-[650px] w-[450px] border border-gray-400 bg-sky-100 rounded-[20px] w-[95%] max-w-[450px] h-auto sm:h-[650px] p-3 sm:p-0">
+    <div class="border border-gray-400 bg-sky-100 rounded-[20px] w-[95%] max-w-[460px] p-4 space-y-4">
 
         <!-- navbar -->
-        <div class="flex justify-evenly bg-sky-300/30 p-3 rounded-[10px] flex-wrap sm:flex-nowrap gap-2 text-center">
+        <div class="flex justify-evenly bg-sky-300/30 p-3 rounded-[10px] text-center">
             <a href="./post-listing-page.html">Post Listing</a>
             <a href="./profile-detail-page.html" class="underline font-semibold">Profile</a>
             <a href="./index.html">Log out</a>
         </div>
 
-        <h1 class="text-2xl font-bold mt-6 text-slate-900/95 text-center">Social Media Profile Detail</h1>
-
-        <form action="">
+        <form action="" class="text-center space-y-3">
 
             <img src="./images/cute girl dp.webp"
-                class="w-[110px] h-[110px] rounded-[50%] ms-auto me-auto mt-5" alt="">
+                class="w-[110px] h-[110px] rounded-full mx-auto" alt="">
 
-            <h1 class="font-bold text-lg text-center">Keerthy K</h1>
-            <p class="text-sm text-gray-600 text-center">@keerthy_k</p>
+            <h1 class="font-bold text-lg">Keerthy K</h1>
+            <p class="text-sm text-gray-600">@keerthy_k</p>
 
-            <p class="text-base text-gray-900 text-center mt-2">
+            <p class="text-gray-900">
                 Web Developer | Traveler | Coffee Lover
                 <i class="fa-solid fa-laptop-code"></i>
                 <i class="fa-solid fa-earth-americas"></i>
             </p>
 
-            <p class="text-base text-gray-900 text-center">
+            <p class="text-gray-900">
                 Exploring the world, one adventure at a time
             </p>
 
             <!-- stats -->
-            <div class="flex justify-evenly mt-4 text-center">
+            <div class="flex justify-evenly pt-2">
                 <div>
                     <p class="font-bold">3</p>
-                    <p class="text-gray-600 text-base">posts</p>
+                    <p class="text-gray-600 text-sm">posts</p>
                 </div>
 
                 <div>
                     <p class="font-bold">1.2K</p>
-                    <p class="text-gray-600 text-base">followers</p>
+                    <p class="text-gray-600 text-sm">followers</p>
                 </div>
 
                 <div>
                     <p class="font-bold">345</p>
-                    <p class="text-gray-600 text-base">following</p>
+                    <p class="text-gray-600 text-sm">following</p>
                 </div>
             </div>
 
             <!-- buttons -->
-            <div class="text-center mt-5 flex flex-col sm:flex-row gap-2 justify-center items-center">
-                <button class="w-[110px] h-[30px] bg-gray-300 rounded-[5px] sm:me-2">Edit profile</button>
-                <button class="w-[110px] h-[30px] bg-gray-300 rounded-[5px]">Share profile</button>
+            <div class="flex justify-center gap-3 pt-2">
+                <button class="w-[110px] h-[32px] bg-gray-300 rounded-[5px]">Edit profile</button>
+                <button class="w-[110px] h-[32px] bg-gray-300 rounded-[5px]">Share profile</button>
             </div>
 
             <!-- gallery -->
-            <div class="flex mt-8 flex-wrap justify-center sm:flex-nowrap">
+            <div class="flex mt-6 flex-wrap justify-center gap-2">
 
-                <img class="w-[130px] h-[130px] ms-0 sm:ms-3 w-[30%] sm:w-[130px]"
+                <img class="w-[30%] sm:w-[130px] h-[130px] object-cover"
                     src="./images/travel 1.jpg" alt="">
 
-                <img class="w-[130px] h-[130px] ms-0 sm:ms-4 w-[30%] sm:w-[130px]"
+                <img class="w-[30%] sm:w-[130px] h-[130px] object-cover"
                     src="./images/travel 3.jpg" alt="">
 
-                <img class="w-[130px] h-[130px] ms-0 sm:ms-4 w-[30%] sm:w-[130px]"
+                <img class="w-[30%] sm:w-[130px] h-[130px] object-cover"
                     src="./images/travel 2.jpg" alt="">
+
             </div>
 
         </form>

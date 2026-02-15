@@ -5,64 +5,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Social Media Register</title>
+
     <!-- tw cdn -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <!-- fontawesome cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body class="h-screen bg-sky-800 flex justify-center items-center">
+<body class="min-h-screen bg-sky-800 flex justify-center items-center">
 
-    <div class="text-center bg-white w-[350px] h-[600px] rounded-[20px] w-[90%] sm:w-[350px] h-auto sm:h-[600px] p-4 sm:p-0">
-        <h1 class="text-2xl font-bold mt-10 text-slate-900/95">Social Media Register</h1>
-        <h3 class="text-xl font-bold mt-4 text-slate-800/80">Create an account!</h3>
+    <div class="bg-white rounded-[20px] w-[90%] sm:w-[360px] p-8 text-center shadow-lg">
 
-        <form action="index.html">
-            <div class="border border-gray-400 w-[75%] h-[40px] rounded-[5px] mt-8 ml-[44px]">
-                <span><i class="fa-regular fa-user"></i>
-                    <input type="text" class="mt-2 w-[210px]" placeholder="Full Name" required></span>
+        <h3 class="text-xl font-bold text-slate-800/80 mb-6">Create an account!</h3>
+
+        <form action="index.html" class="space-y-4">
+
+            <div class="border border-gray-400 rounded-[5px] h-[42px] flex items-center px-3">
+                <i class="fa-regular fa-user"></i>
+                <input type="text" class="w-full ms-2 outline-none" placeholder="Full Name" required>
             </div>
 
-            <div class="border border-gray-400 w-[75%] h-[40px] rounded-[5px] mt-5 ml-[44px]">
-                <span><i class="fa-regular fa-envelope text-[17px] text-gray-500"></i>
-                    <input type="email" class="mt-2 w-[210px]" placeholder="Email" required></span>
+            <div class="border border-gray-400 rounded-[5px] h-[42px] flex items-center px-3">
+                <i class="fa-regular fa-envelope text-gray-500"></i>
+                <input type="email" class="w-full ms-2 outline-none" placeholder="Email" required>
             </div>
 
-            <div class="border border-gray-400 w-[75%] h-[40px] rounded-[5px] mt-5 ml-[44px]">
-                <span><i class="fa-solid fa-lock text-[18px] text-gray-500"></i>
-                    <input type="password" class="mt-2 w-[210px]" placeholder="Password" minlength="6" required></span>
+            <div class="border border-gray-400 rounded-[5px] h-[42px] flex items-center px-3">
+                <i class="fa-solid fa-lock text-gray-500"></i>
+                <input type="password" class="w-full ms-2 outline-none" placeholder="Password" minlength="6"
+                    required>
             </div>
 
-            <div class="border border-gray-400 w-[75%] h-[40px] rounded-[5px] mt-5 ml-[44px]">
-                <span><i class="fa-solid fa-lock text-[18px] text-gray-500"></i>
-                    <input type="password" class="mt-2 w-[210px]" placeholder="Confirm Password" minlength="6"
-                        required></span>
+            <div class="border border-gray-400 rounded-[5px] h-[42px] flex items-center px-3">
+                <i class="fa-solid fa-lock text-gray-500"></i>
+                <input type="password" class="w-full ms-2 outline-none" placeholder="Confirm Password"
+                    minlength="6" required>
             </div>
 
-
-
-            <div class="flex justify-center items-center">
-                <span><input type="checkbox" class="mx-2 w-[15px] h-[15px] mt-6" name="" id="" required></span><span
-                    class="mt-[13px] text-gray-900 text-sm"><label for="">I agree to the Terms &
-                        Conditions</label></span>
-            </div>
-
-
+            <label class="flex justify-center items-center gap-2 text-sm pt-2">
+                <input type="checkbox" required>
+                I agree to the Terms & Conditions
+            </label>
 
             <button type="submit"
-                class="w-[75%] h-[40px] border border-gray-400 rounded-[20px] mt-7 bg-indigo-600 text-white text-lg font-bold ml-[7px] pt-1 pb-1">
-                Register</button>
+                class="w-full h-[42px] rounded-[20px] bg-indigo-600 text-white text-lg font-bold">
+                Register
+            </button>
 
+            <p class="text-sm">
+                Already have an account?
+                <a href="./index.html" class="font-semibold underline">Login</a>
+            </p>
 
-            <div class="mt-5">
-                <p class="text-gray-900 text-base">Already have an account? <a href="./index.html"
-                        class="text-gray-900 text-lg font-semibold underline ml-1">Login</a></p>
-            </div>
         </form>
-
 
     </div>
 
